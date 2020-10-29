@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+     *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    .root{
+        --main-font:'Pacifico', cursive;
+    }
+    .homepage{
+        width:100%;
+        height:650px;
+        background-image: url("home-page.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .loginblock{
+    width:450px;
+    height:450px;
+    position:absolute;
+    top:140px;
+    left:500px;
+    z-index:8;
+    box-sizing: border-box;
+    padding:200px 30px;
+    transition:0.5s;
+    border-radius:15px;
+    
+}
+.loginblock:hover{
+    -webkit-box-shadow:6px 6px 17px 0px rgba(186, 135, 241, 0.75);
+    -moz-box-shadow:6px 6px 17px 0px rgba(186, 134, 241, 0.75);
+     box-shadow:6px 6px 17px 0px rgba(186, 146, 228, 0.75);
+}
+/* -webkit-box-shadow:6px 6px 17px 0px rgba(147, 43, 255, 0.75);
+    -moz-box-shadow:6px 6px 17px 0px rgba(147, 43, 255, 0.75);
+     box-shadow:6px 6px 17px 0px rgba(147, 43, 255, 0.75); */
+     /* -webkit-box-shadow: 4px 6px 19px 0px rgba(184, 84, 252, 0.75);
+-moz-box-shadow:    4px 6px 19px 0px rgba(207, 43, 255, 0.75);
+box-shadow:         4px 6px 19px 0px rgba(207, 43, 255, 0.75); */
+.loginblock h1{
+    position:relative;
+    top:-140px;
+    left:26%;
+    margin:0;
+    padding:0 0 20px;
+    color:rgba(53, 3, 105, 0.75);
+    font-family:var(--main-font);
+}
+.loginblock button:hover{
+    transform:scale(1.2);
+    }
+.loginblock p{
+    font-weight:bold;
+    color:rgba(47, 6, 90, 0.75);;
+    margin:0;
+    padding:0px;
+    position:relative;
+    top:-80px;
+}
+.loginblock input{
+    width:100%;
+    margin-bottom:20px;
+    position:relative;
+    top:-75px;
+}
+.loginblock button{
+    width:50%;
+    height:35px;
+    background-color:rgba(147, 43, 255, 0.75);
+    border-radius:50px;
+    position: relative;
+    top:-70px;
+    left:100px;
+    transition: 0.5s;
+    cursor:pointer;
+}
+.loginblock input[type="text"], input[type="password"]
+{
+    border:none;
+    border-bottom:1px solid rgba(147, 43, 255, 0.75);;
+    background:transparent;
+    outline:none;
+    height:40px;
+}
+.loginblock h2{
+    position:relative;
+    top:-120px;
+    left:39px;
+    color:rgba(81, 35, 131, 0.75);
+}
+.loginblock a{
+    position:relative;
+    left:5px;
+    top:-60px;
+    color:blueviolet; 
+    cursor:pointer;  
+}
+.loginblock hr{
+    width:50%;
+    margin: auto;
+    padding:5px;
+    background-color:#E1f06c;
+    border:none;
+    position:absolute;
+    top:100px;
+    left:100px;
+}
+/* @media screen and (max-width:550px),screen and (max-height:700px) */
+@media (max-width:468px)
+{
+   .loginblock{
+       width:250px;
+       height:480px; 
+       position:absolute;
+       left:-10px;
+       top:50px; 
+   }
+.homepage{
+    width:300px;
+    height:700px;
+}
+.loginblock hr{
+   position:relative;
+   left:5px;
+   top:-160px;
+   width:100%;
+}
+.loginblock h2{
+    position:relative;
+    left:0px;
+    top:-140px;
+}
+.loginblock p{
+    position: relative;
+    top:-100px;
+}
+.loginblock input[type="text"], input[type="password"]
+{
+    position:relative;
+    top:-100px;
+}
+.loginblock button{
+    position: relative;
+    top:-90px;
+}
+.loginblock a{
+    position: relative;
+    top:-70px;
+}
+.loginblock h1{
+    position:relative;
+    top:-140px;
+    left:150%;  
+ }
+}
+ @media (max-width:768px)
+ {
+     .homepage{
+        width:768px;
+        height:601px;
+     }
+     .loginblock{
+         position:absolute;
+         left:200px;
+         top:50px;
+         width:300px;
+         height:500px;
+     }
+     .loginblock hr{
+   position:relative;
+   left:5px;
+   top:-160px;
+   width:100%;
+}
+.loginblock h2{
+    position:relative;
+    left:0px;
+    top:-140px;
+}
+.loginblock p{
+    position: relative;
+    top:-100px;
+}
+.loginblock input[type="text"], input[type="password"]
+{
+    position:relative;
+    top:-100px;
+}
+.loginblock button{
+    position: relative;
+    top:-90px;
+}
+.loginblock a{
+    position: relative;
+    top:-70px;
+}
+.loginblock h1{
+    position: relative;
+    left:40px;
+}
+ }
+
+@media (max-width:200px)
+{
+    .homepage{
+        width:400px;
+        /* background-image: url("home-page.png");
+        background-size: cover; */
+    }
+    .loginblock{
+        position: absolute;
+        left:50px;
+    }
+}
+ </style>
+
+<body>
+    <div class="homepage">
+        <div class="loginblock">
+     <form>
+           <h1>Login Form</h1>
+     <hr/>
+     <h2>Welcome to Daily Web Coding</h2>
+           <p>username</p>
+           <input type="text" name="username" placeholder="username">
+           <p>password</p>
+           <input type="password" name="password" placeholder="password">  
+           <button type="submit" class="btn btn-primary">login</button> 
+         <br/>  <a routerLink="/signup">
+            SignUp if not registered ?
+            </a> 
+           </form>
+        </div>
+    </div>
+</body>
+</html>
